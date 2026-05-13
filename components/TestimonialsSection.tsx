@@ -58,14 +58,16 @@ const TestimonialsSection = () => {
                 {duplicatedTestimonials.map((testimonial, i)=>(
                     <div 
                         key={i} 
-                        className="flex flex-col justify-between w-87.5 p-8 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shadow-sm shrink-0"
+                        className="flex flex-col justify-between w-[350px] p-8 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shadow-sm shrink-0 hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 hover:shadow-lg dark:hover:shadow-white/5 cursor-default group"
                     >
-                        <h2 className="text-lg text-neutral-800 dark:text-neutral-200 font-medium leading-relaxed mb-8">
+                        <h2 className="text-lg text-neutral-800 dark:text-neutral-200 font-medium leading-relaxed mb-8 group-hover:text-black dark:group-hover:text-white transition-colors duration-300">
                             "{testimonial.quote}"
                         </h2>
                         
                         <div className="flex items-center gap-4 mt-auto">
-                            <div className="w-12 h-12 rounded-full bg-neutral-900 dark:bg-neutral-700 shrink-0 flex items-center justify-center text-white/50"></div>
+                            <div className="w-12 h-12 rounded-full bg-neutral-900 dark:bg-neutral-700 shrink-0 flex items-center justify-center text-white/50 group-hover:scale-105 transition-transform duration-300">
+                                {/* Simple avatar placeholder */}
+                            </div>
 
                             <div className="flex flex-col">
                                 <h3 className="font-semibold text-neutral-900 dark:text-white text-sm">

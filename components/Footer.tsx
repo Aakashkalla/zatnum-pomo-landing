@@ -6,15 +6,15 @@ const Footer = () => {
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 md:gap-0">
                 
                 {/* Left Side: Brand & Copyright */}
-                <div className="flex flex-col max-w-sm">
-                    <h2 className="text-white text-xl font-bold mb-4 tracking-tight">PomoPivot</h2>
-                    <p className="text-sm leading-relaxed">
+                <div className="flex flex-col max-w-sm w-full md:w-auto">
+                    <h2 className="text-white text-xl font-bold mb-4 tracking-tight font-montserrat">PomoPivot</h2>
+                    <p className="text-sm leading-relaxed max-w-62.5 md:max-w-none">
                         © 2026 PomoPivot. Absolute focus<br className="hidden md:block" /> through reduction.
                     </p>
                 </div>
 
                 {/* Right Side: Link Columns */}
-                <div className="flex flex-wrap md:flex-nowrap gap-12 md:gap-24">
+                <div className="grid grid-cols-2 md:flex md:flex-nowrap gap-y-10 gap-x-8 md:gap-24 w-full md:w-auto">
                     
                     {/* PRODUCT Column */}
                     <div className="flex flex-col gap-4">

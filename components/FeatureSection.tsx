@@ -9,25 +9,25 @@ import KeyboardIcon from './ui/icons/KeyboardIcon'
 const FeatureSection = () => {
     return (
         <>
-            <div className='flex items-center justify-between h-auto bg-neutral-900 p-6 font-montserrat font-semibold'>
-                <div className='text-primary font-inter text-sm'>
+            <div className='flex flex-col md:flex-row items-center justify-between h-auto bg-neutral-900 p-6 md:px-12 font-montserrat font-semibold gap-6 md:gap-0 animate-fade-in-up'>
+                <div className='text-primary font-inter text-xs md:text-sm text-center md:text-left'>
                     TRUSTED BY STUDENTS, DEVELOPERS, AND CREATORS.
                 </div>
 
-                <div className='flex items-center gap-4'>
-                    <div className='flex flex-col gap-1'>
-                        <h2 className='text-xl'>10000+</h2>
-                        <p className='text-sm font-light text-secondary'>Focus Sessions</p>
+                <div className='flex items-center gap-8 md:gap-12'>
+                    <div className='flex flex-col gap-1 items-center md:items-start group'>
+                        <h2 className='text-xl md:text-2xl group-hover:scale-110 transition-transform duration-300'>10000+</h2>
+                        <p className='text-xs md:text-sm font-light text-secondary'>Focus Sessions</p>
                     </div>
 
-                    <div className='flex flex-col gap-1'>
-                        <h2 className='text-xl'>4.9/5</h2>
-                        <p className='text-sm font-light text-secondary'>User Rating</p>
+                    <div className='flex flex-col gap-1 items-center md:items-start group'>
+                        <h2 className='text-xl md:text-2xl group-hover:scale-110 transition-transform duration-300'>4.9/5</h2>
+                        <p className='text-xs md:text-sm font-light text-secondary'>User Rating</p>
                     </div>
                 </div>
             </div>
-            <section id="features" className="max-w-6xl mx-auto px-4 py-24 mt-20">
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+            <section id="features" className="max-w-6xl mx-auto px-4 py-16 md:py-24 mt-10 md:mt-20">
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
                     <FeatureCard 
                     icon={<ClockIcon/>}
                     description='Zero distraction environment. Only the time and your task, rendered in high-contrast elegance.'
