@@ -26,7 +26,7 @@ const FeatureSection = () => {
                     </div>
                 </div>
             </div>
-            <section id="features" className="max-w-6xl mx-auto px-4 py-24">
+            <section id="features" className="max-w-6xl mx-auto px-4 py-24 mt-20">
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                     <FeatureCard 
                     icon={<ClockIcon/>}

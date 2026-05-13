@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
     const duplicatedTestimonials = [...TestimonialsDataArray, ...TestimonialsDataArray];
 
     return (
-        <section id="testimonials" className="py-20 overflow-hidden relative w-full border-y border-neutral-200 dark:border-neutral-800">
+        <section id="testimonials" className="mt-40 py-20 overflow-hidden relative w-full border-y border-neutral-200 dark:border-neutral-800">
             <style>
                 {`
                     @keyframes scroll {

@@ -18,7 +18,7 @@ const WorkFlowStageCard = ({number, heading, description} : WorkflowStageProps) 
 
 const WorkFlow = () => {
     return (
-        <section id="workflow" className="bg-neutral-900 text-primary font-montserrat font-semibold pt-20">
+        <section id="workflow" className="bg-neutral-900 text-primary font-montserrat font-semibold pt-20 mt-20">
             <h1 className="font-bold text-center text-4xl">The Workflow</h1>
 
             <div className="flex flex-col md:flex-row items-start justify-center pt-16 pb-20 gap-12 px-4">
