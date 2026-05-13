@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PomoPivot Landing Page
 
-## Getting Started
+A modern, responsive marketing landing page for PomoPivot, a minimalist Pomodoro timer focused on deep work. The page highlights product value, features, workflow, testimonials, and a clear CTA, with clean animations and a dark, cinematic aesthetic.
 
-First, run the development server:
+## Overview
+
+This project is built with Next.js (App Router) and Tailwind CSS. It includes a fully responsive layout, animated hero, interactive cards, and a mobile-friendly navigation with a hamburger menu.
+
+## Sections
+
+- Hero: headline, supporting copy, CTA buttons, and product image
+- Feature strip and feature cards
+- Workflow timeline
+- Testimonials carousel
+- CTA section
+- Footer with product/support/community links
+
+## Tech Stack
+
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- TypeScript
+
+## Project Structure
+
+- App entry point: [app/page.tsx](app/page.tsx)
+- Global styles: [app/globals.css](app/globals.css)
+- Layout and fonts: [app/layout.tsx](app/layout.tsx)
+- UI sections: [components](components)
+
+Key components:
+
+- [components/NavBar.tsx](components/NavBar.tsx)
+- [components/HeroSection.tsx](components/HeroSection.tsx)
+- [components/FeatureSection.tsx](components/FeatureSection.tsx)
+- [components/WorkFlow.tsx](components/WorkFlow.tsx)
+- [components/TestimonialsSection.tsx](components/TestimonialsSection.tsx)
+- [components/CTASection.tsx](components/CTASection.tsx)
+- [components/Footer.tsx](components/Footer.tsx)
+
+## Running Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - start the dev server
+- `npm run build` - build for production
+- `npm run start` - run the production build
+- `npm run lint` - run linting
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+- Update copy and layout in the components listed above.
+- Replace the hero image in `public` and update the path in [components/HeroSection.tsx](components/HeroSection.tsx).
+- Adjust global animation styles in [app/globals.css](app/globals.css).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy on your preferred platform (Vercel, Netlify, or any Node.js host) after running `npm run build`.

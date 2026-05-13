@@ -6,7 +6,7 @@ type WorkflowStageProps = {
 
 const WorkFlowStageCard = ({number, heading, description} : WorkflowStageProps) => {
     return(
-        <div className="flex flex-col items-center text-center group max-w-sm md:max-w-[220px] hover:-translate-y-2 transition-transform duration-300">
+        <div className="flex flex-col items-center text-center group max-w-sm md:max-w-55 hover:-translate-y-2 transition-transform duration-300">
                     <div className="w-16 h-16 flex items-center justify-center border-2 rounded-full border-neutral-600 group-hover:border-primary group-hover:scale-110 group-hover:bg-white/5 transition-all duration-300 text-2xl font-bold mb-4 group-hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]">
                         {number}
                     </div>
